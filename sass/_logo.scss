@@ -1,0 +1,15 @@
+.logo {
+  @include responsive(phone) {
+    &--header {
+      width: 50%;
+
+      .logo__img {
+        width: 100%;
+      }
+    }
+
+    &--footer {
+      margin-top: 20rem;
+    }
+  }
+}

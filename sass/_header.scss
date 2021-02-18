@@ -1,0 +1,51 @@
+.header {
+  padding: var(--basic-padding);
+  background-color: var(--l-cyan);
+  background-image: url(../img/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+
+  @include responsive(tab-port) {
+    background-image: url(../img/bg-hero-mobile.svg);
+    text-align: center;
+
+    &__text-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    @include responsive(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-box {
+    flex: 0 0 56%;
+    margin-left: 5rem;
+
+    @include responsive(tab-port) {
+      margin-left: 0;
+      margin-top: 8rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

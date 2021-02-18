@@ -1,0 +1,47 @@
+.btn {
+  font-family: var(--fprimary);
+  font-size: var(--fnormal);
+  font-weight: 700;
+  display: inline-block;
+  border-radius: var(--boval);
+  box-shadow: var(--shadow);
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &--large {
+    padding: 3rem 12rem;
+
+    @include responsive(phone) {
+      padding: 3rem 4rem;
+    }
+  }
+
+  &--medium {
+    padding: 1.5rem 4.5rem;
+  }
+
+  &--pink {
+    background-color: var(--pink);
+    color: var(--l-cyan);
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: var(--d-cyan);
+
+    @include responsive(phone) {
+      padding: 1.5rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

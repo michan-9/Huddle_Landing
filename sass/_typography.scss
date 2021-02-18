@@ -1,0 +1,26 @@
+%heading {
+  font-family: var(--fsecondary);
+  font-weight: 600;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: var(--flarge);
+  line-height: var(--llarge);
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: var(--fmedium);
+  line-height: var(--lmedium);
+}
+
+.paragraph {
+  &--light {
+    color: var(--l-blue);
+  }
+
+  &--cyan {
+    color: var(--l-cyan);
+  }
+}

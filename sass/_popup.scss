@@ -1,0 +1,27 @@
+.popup {
+  position: absolute;
+  padding: 4rem;
+  border-radius: var(--bnormal);
+  box-shadow: var(--shadow-2);
+  background-color: #fff;
+  bottom: -19%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  @include responsive(tab-port) {
+    bottom: -13%;
+    width: 90%;
+  }
+
+  @include responsive(phone) {
+    padding: 2rem;
+    bottom: -18%;
+  }
+}

@@ -1,0 +1,31 @@
+/* DESKTOP FIRST MEDIA QUERY 
+
+1440px {NORMAL STYLE}
+
+1200px - 900px [75em] {TABLET LANDSCAPE} [tab-land]
+
+900px - 600px [56.25em] {TABLET PORTRAIT} [tab-port]
+
+600px - 350px [37.5em] {NORMAL PHONE} [phone]
+
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
